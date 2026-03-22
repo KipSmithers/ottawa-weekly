@@ -1,0 +1,56 @@
+title: "St. Patrick's Weekend & Maple Season"
+publish_date: "2026-03-12"
+issue_number: 46
+summary: "Ottawa's St. Pat's parade is back on Sparks Street, maple syrup season hits its peak in the Valley, and a new ramen spot opens in Centretown."
+editor_note: "There's a specific kind of Ottawa energy that shows up on St. Patrick's Day — everyone a little giddy, Sparks Street louder than usual, the pubs full by noon. It's one of the city's best secular holidays. Lean into it."
+
+featured_event:
+  title: "St. Patrick's Day Parade on Sparks Street"
+  date_time: "Sunday, March 15 · 11:00 AM"
+  location: "Sparks Street, starting at Elgin"
+  description: "Ottawa's annual St. Patrick's parade winds through Sparks Street with marching bands, Irish dancers, community floats, and more green than you've ever seen in one place. Free to watch, arrive early for a good spot on the south side."
+  source_url: "https://ottawaparade.ca"
+
+highlights:
+  - title: "Fulton's Maple Sugar Pancake Breakfast"
+    date_time: "Every weekend through April · 9:00 AM – 3:00 PM"
+    location: "Fulton's Pancake House, Pakenham"
+    description: "The Gatineau Hills' most famous maple operation is in full swing. Pancake breakfast with fresh syrup, wagon rides through the sugar bush, and a sugar shack tour. One of the best day trips from Ottawa."
+    source_url: "https://fultonspancakehouse.com"
+
+  - title: "Irish Trad Session at the Manx Pub"
+    date_time: "Saturday, March 14 · 9:00 PM – midnight"
+    location: "The Manx Pub, 370 Elgin St"
+    description: "One of Ottawa's best traditional Irish music sessions happens every second Saturday at the Manx. Local musicians, no cover, genuinely excellent. Get there by 8:30 to find a seat."
+    source_url: "https://themanxpub.ca"
+
+  - title: "NAC English Theatre – 'The Importance of Being Earnest'"
+    date_time: "Opens March 13, runs through April 5"
+    location: "NAC Azrieli Studio, 1 Elgin St"
+    description: "A fresh, modern staging of Wilde's comedy of manners from the NAC English Theatre. Sharp and genuinely funny — this production leans into the absurdity without losing the elegance."
+    source_url: "https://nac-cna.ca"
+
+  - title: "Ottawa Redblacks Fan Fest & Season Preview"
+    date_time: "Saturday, March 14 · 1:00 PM – 5:00 PM"
+    location: "Lansdowne Park, South Stand"
+    description: "The CFL season is still months away but the Redblacks host their annual fan event with autograph sessions, a Q&A with the coaching staff, and a look at the new uniforms. Free entry."
+    source_url: "https://ottawaredblacks.com"
+
+family_corner:
+  - title: "Ottawa Public Library – St. Pat's Story Time"
+    date_time: "Saturday, March 14 · 10:30 AM"
+    location: "Ottawa Public Library, Main Branch, 120 Metcalfe St"
+    description: "Irish folk tales and leprechaun legends for kids aged 3–8. Crafts follow the reading — kids make paper shamrocks and a leprechaun trap. Free, no registration required."
+    source_url: "https://biblioottawalibrary.ca"
+
+  - title: "Maple Syrup Workshop for Kids"
+    date_time: "Sunday, March 15 · 11:00 AM and 2:00 PM"
+    location: "Macnamara Nature Trail, Arnprior"
+    description: "Kids learn how maple sap becomes syrup, tap a tree themselves, and taste fresh sap. Guided by local producers. $12 per family, reservations required."
+    source_url: "https://arnprior.ca"
+
+  - title: "Rideau River Nature Walk – Spotting Signs of Spring"
+    date_time: "Sunday, March 15 · 1:00 PM"
+    location: "Hurdman Park, 1035 Innes Rd"
+    description: "A free, family-friendly 45-minute walk along the Rideau with a naturalist who'll point out the first signs of spring — returning birds, pussy willows, and ice-out changes. All ages welcome."
+    source_url: "https://ottawa.ca/en/recreation-and-parks"

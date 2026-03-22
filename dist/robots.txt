@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /thank-you
+Disallow: /confirm
+
+Sitemap: https://ottawaweekly.ca/sitemap-index.xml

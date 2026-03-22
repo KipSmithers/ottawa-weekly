@@ -1,0 +1,93 @@
+---
+const navLinks = [
+  { label: 'Archive', href: '/archive' },
+  { label: 'About', href: '/about' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="bg-forest sticky top-0 z-50 border-b border-forest-mid">
+  <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+    <!-- Logo + Brand -->
+    <a href="/" class="flex items-center gap-2.5 group" aria-label="Ottawa Weekly — Home">
+      <span class="text-gold group-hover:text-gold-light transition-colors duration-200 w-6 h-6 flex-shrink-0">
+        <svg viewBox="0 0 100 112" fill="currentColor" aria-hidden="true" class="w-full h-full">
+          <path d="M50 4 C50 4 47.5 18 46 21 C44.5 24 36 17 36 17 C36 17 39 27 37 31 C35 35 24 31 24 31 C24 31 30 40 28 44 C26 48 14 46 14 46 C14 46 21 54 21 58 C21 62 8 62 8 62 C8 62 22 68 24 72 C26 76 18 88 18 88 C18 88 32 83 40 86 L40 96 L44 108 L56 108 L60 96 L60 86 C68 83 82 88 82 88 C82 88 74 76 76 72 C78 68 92 62 92 62 C92 62 79 62 79 58 C79 54 86 46 86 46 C86 46 74 48 72 44 C70 40 76 31 76 31 C76 31 65 35 63 31 C61 27 64 17 64 17 C64 17 55.5 24 54 21 C52.5 18 50 4 50 4 Z"/>
+        </svg>
+      </span>
+      <span class="font-display text-cream font-semibold text-lg leading-none">
+        Ottawa <span class="text-gold group-hover:text-gold-light transition-colors duration-200">Weekly</span>
+      </span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-6">
+      {navLinks.map(link => (
+        <a
+          href={link.href}
+          class:list={[
+            'text-sm font-medium transition-colors duration-200',
+            currentPath.startsWith(link.href)
+              ? 'text-gold'
+              : 'text-cream/70 hover:text-cream'
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="/#subscribe"
+        class="bg-gold hover:bg-gold-hover text-forest text-sm font-semibold px-4 py-2 rounded-md transition-colors duration-200"
+      >
+        Subscribe Free
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden text-cream/70 hover:text-cream transition-colors duration-200 p-1"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+    >
+      <svg id="icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-forest-mid border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4">
+      {navLinks.map(link => (
+        <a href={link.href} class="text-cream/80 hover:text-cream font-medium transition-colors duration-200">
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="/#subscribe"
+        class="bg-gold hover:bg-gold-hover text-forest text-sm font-semibold px-4 py-2.5 rounded-md text-center transition-colors duration-200"
+      >
+        Subscribe Free
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', String(isOpen));
+    iconOpen?.classList.toggle('hidden', isOpen);
+    iconClose?.classList.toggle('hidden', !isOpen);
+  });
+</script>

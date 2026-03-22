@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+---
+
+<Layout
+  title="About"
+  description="Ottawa Weekly is a Thursday newsletter celebrating the best of Ottawa — arts, food, outdoors, and community."
+>
+  <Nav />
+
+  <main>
+    <!-- Header -->
+    <section class="bg-forest">
+      <div class="max-w-2xl mx-auto px-6 py-16">
+        <p class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">About</p>
+        <h1 class="font-display text-cream text-4xl font-bold mb-4">
+          Because this city deserves to be celebrated.
+        </h1>
+        <p class="text-cream/60 text-lg leading-relaxed">
+          Ottawa Weekly is a free Thursday newsletter for people who love Ottawa — and for people who are just starting to.
+        </p>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <section class="max-w-2xl mx-auto px-6 py-12 space-y-8 text-gray-700 leading-relaxed">
+      <div>
+        <h2 class="font-display text-forest text-xl font-bold mb-3">What this is</h2>
+        <p class="mb-4">
+          Every Thursday morning, Ottawa Weekly lands in your inbox with a curated digest of the week's best events, food finds, outdoor adventures, and cultural moments. No algorithm. No aggregation. Just one person's considered take on what's worth your time this weekend.
+        </p>
+        <p>
+          The format is simple: one featured event worth planning your week around, four weekly highlights across different categories, and a family corner with three picks for everyone who comes with a kid in tow.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-forest text-xl font-bold mb-3">What this isn't</h2>
+        <p>
+          Ottawa has enough sources for the hard stuff — politics, crime, traffic, outrage. Ottawa Weekly is deliberately not that. It's a dose of the city at its best: the jazz festival preview, the farmers' market reopening, the Gatineau Park walk you keep meaning to do. If it doesn't make you feel good about living here, it doesn't go in.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-forest text-xl font-bold mb-3">Want to suggest an event?</h2>
+        <p class="mb-4">
+          If you know about something happening in Ottawa that should be in the newsletter, send it to <a href="mailto:hello@ottawaweekly.ca" class="text-gold hover:text-gold-hover font-medium transition-colors duration-200">hello@ottawaweekly.ca</a>. The only criteria: it should be something you'd genuinely tell a friend about.
+        </p>
+        <p class="text-sm text-muted">
+          Note: Ottawa Weekly is an independent publication. Event mentions are purely editorial — there's no paid placement in v1.
+        </p>
+      </div>
+
+      <div class="bg-cream-dark rounded-card p-6 border border-gray-200">
+        <h2 class="font-display text-forest text-lg font-bold mb-3">Subscribe</h2>
+        <SubscribeForm
+          variant="inline"
+          subtext="Free, every Thursday. Join Ottawa readers who start their weekend planning early."
+        />
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

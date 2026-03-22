@@ -1,0 +1,56 @@
+title: "Spring Sounds & Cherry Blossoms"
+publish_date: "2026-03-19"
+issue_number: 47
+summary: "Jazz returns to the Canal, cherry blossoms hit peak bloom at Dow's Lake, and the Carp Farmers' Market reopens for the season."
+editor_note: "Spring came in fast this year. One day it was -12 and grey, the next the cherry trees along the Canal were doing their thing. This is the Ottawa I love — no preamble, just suddenly beautiful. Enjoy this one."
+
+featured_event:
+  title: "Ottawa Jazz Festival – Spring Preview Night"
+  date_time: "Saturday, March 21 · 7:30 PM"
+  location: "NAC Southam Hall, 1 Elgin St"
+  description: "The city's favourite jazz celebration kicks off its spring edition with an intimate preview night. Local legend Colleen Allen leads a quartet through standards and originals, joined by a Montreal bassist making his Ottawa debut. Drinks in the lobby from 6:30."
+  source_url: "https://ottawajazzfestival.com"
+
+highlights:
+  - title: "Dow's Lake Cherry Blossom Walk"
+    date_time: "All weekend · Dawn to dusk"
+    location: "Dow's Lake Pavilion, 1001 Queen Elizabeth Dr"
+    description: "Peak bloom is here. The ornamental cherry trees along the Canal are absolutely putting on a show this year — experts are calling it the best season in a decade. Go early to beat the crowds. Free, always."
+    source_url: "https://ncc-ccn.gc.ca/places/dows-lake"
+
+  - title: "Spring Craft Beer Festival"
+    date_time: "Friday–Sunday · Various times"
+    location: "Lansdowne Park, Aberdeen Pavilion"
+    description: "Over 40 Ontario craft breweries pour their spring seasonals. Try the wild ales, fruited sours, and the smoked maple porter from Beau's that's getting serious attention this year."
+    source_url: "https://ottawacraftbeer.ca"
+
+  - title: "Carp Farmers' Market – Opening Day"
+    date_time: "Saturday, March 21 · 8:00 AM – 1:00 PM"
+    location: "Carp Fairgrounds, 3790 Carp Rd"
+    description: "One of the Ottawa Valley's most beloved markets reopens for the season. Fresh maple syrup, greenhouse seedlings, artisan bread, and 80+ vendors. Get there before 10 or the good stuff disappears."
+    source_url: "https://carpfarmersmarket.ca"
+
+  - title: "Gatineau Park Wildflower Walk"
+    date_time: "Sunday, March 22 · 10:00 AM"
+    location: "Pink Lake Trailhead, Gatineau Park"
+    description: "A guided 90-minute walk through the park's best early wildflower spots — trout lilies, bloodroot, hepatica. Led by NCC naturalists. Free with registration, limited to 20 participants."
+    source_url: "https://ncc-ccn.gc.ca/places/gatineau-park"
+
+family_corner:
+  - title: "Dino Discovery Days at the Museum of Nature"
+    date_time: "Saturday & Sunday · 10:00 AM – 4:00 PM"
+    location: "Canadian Museum of Nature, 240 McLeod St"
+    description: "Hands-on fossil activities, dino puppet shows, and a chance to meet real paleontologists working on the new Cretaceous gallery. Ages 4–12, included with museum admission."
+    source_url: "https://nature.ca"
+
+  - title: "Family Paint Night – Spring Edition"
+    date_time: "Saturday, March 21 · 2:00 PM"
+    location: "Hintonburg Community Centre, 1064 Wellington St W"
+    description: "Drop-in family painting workshop. Kids paint cherry blossoms while parents relax with a coffee. All supplies included, just $5 per family. No registration needed."
+    source_url: "https://ottawa.ca/en/recreation-and-parks"
+
+  - title: "Saturday Roller Skating at Rideau"
+    date_time: "Saturdays · 2:00 PM – 5:00 PM"
+    location: "Rideau Arena, 1505 Rideau St"
+    description: "Classic Saturday afternoon roller skating with a DJ spinning crowd-pleasers. Skate rentals available on-site. Ages 5 and up, $6 entry."
+    source_url: "https://ottawa.ca/en/recreation-and-parks"

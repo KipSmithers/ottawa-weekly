@@ -1,0 +1,195 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import SubscribeForm from '../../components/SubscribeForm.astro';
+import EventCard from '../../components/EventCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const issues = await getCollection('issues');
+  const sorted = issues.sort((a, b) =>
+    new Date(a.data.publish_date).getTime() - new Date(b.data.publish_date).getTime()
+  );
+  return sorted.map((issue, i) => ({
+    params: { slug: issue.id },
+    props: {
+      issue,
+      prev: sorted[i - 1] ?? null,
+      next: sorted[i + 1] ?? null,
+    },
+  }));
+}
+
+const { issue, prev, next } = Astro.props;
+const { data } = issue;
+
+const publishDate = new Date(data.publish_date);
+const formattedDate = publishDate.toLocaleDateString('en-CA', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.summary,
+  datePublished: data.publish_date,
+  publisher: {
+    '@type': 'Organization',
+    name: 'Ottawa Weekly',
+    url: 'https://ottawaweekly.ca',
+  },
+});
+---
+
+<Layout
+  title={data.title}
+  description={data.summary}
+  type="article"
+  publishDate={data.publish_date}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={jsonLd} />
+  </Fragment>
+
+  <Nav />
+
+  <main>
+    <!-- Issue Header -->
+    <section class="bg-forest">
+      <div class="max-w-3xl mx-auto px-6 py-12 md:py-16">
+        <div class="flex items-center gap-2 mb-4 text-gold text-xs font-semibold uppercase tracking-widest">
+          <a href="/archive" class="hover:text-gold-light transition-colors duration-200">Archive</a>
+          <span class="text-cream/30">/</span>
+          {data.issue_number && <span>Issue #{data.issue_number}</span>}
+        </div>
+        <h1 class="font-display text-cream text-3xl md:text-4xl font-bold mb-3 leading-tight">
+          {data.title}
+        </h1>
+        <p class="text-cream/50 text-sm">{formattedDate}</p>
+
+        {data.editor_note && (
+          <div class="mt-6 bg-white/5 border border-white/10 rounded-card p-5 italic text-cream/70 leading-relaxed text-sm border-l-4 border-l-gold">
+            <p class="text-gold not-italic text-xs font-semibold uppercase tracking-widest mb-1">Editor's Note</p>
+            "{data.editor_note}"
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- Issue Content -->
+    <div class="max-w-3xl mx-auto px-6 py-10 space-y-10">
+
+      <!-- Featured Event -->
+      <section>
+        <EventCard {...data.featured_event} variant="featured" />
+      </section>
+
+      <!-- Mid-page Subscribe Prompt -->
+      <section>
+        <SubscribeForm
+          variant="inline"
+          headline="Getting this from a friend?"
+          subtext="Subscribe free and get Ottawa's best in your inbox every Thursday."
+        />
+      </section>
+
+      <!-- Weekly Highlights -->
+      <section>
+        <h2 class="font-display text-forest text-xl font-bold mb-5 flex items-center gap-2">
+          <span class="w-1 h-6 bg-gold rounded-full" aria-hidden="true"></span>
+          This Week's Highlights
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {data.highlights.map(event => (
+            <EventCard {...event} />
+          ))}
+        </div>
+      </section>
+
+      <!-- Family Corner -->
+      <section>
+        <h2 class="font-display text-forest text-xl font-bold mb-5 flex items-center gap-2">
+          <span class="w-1 h-6 bg-sage rounded-full" aria-hidden="true"></span>
+          Family Corner
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {data.family_corner.map(event => (
+            <EventCard {...event} variant="family" />
+          ))}
+        </div>
+      </section>
+
+      <!-- Share -->
+      <section class="border-t border-gray-200 pt-8">
+        <p class="text-sm font-semibold text-forest mb-3">Share this issue</p>
+        <div class="flex flex-wrap gap-2">
+          <button
+            id="copy-link-btn"
+            class="flex items-center gap-2 text-sm border border-gray-200 bg-white hover:bg-cream-dark text-gray-700 px-4 py-2 rounded-md transition-colors duration-200"
+            aria-label="Copy link to clipboard"
+          >
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+            <span id="copy-label">Copy link</span>
+          </button>
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://ottawaweekly.ca/issues/' + issue.id)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-sm border border-gray-200 bg-white hover:bg-cream-dark text-gray-700 px-4 py-2 rounded-md transition-colors duration-200"
+          >
+            Share on Facebook
+          </a>
+        </div>
+      </section>
+
+      <!-- Prev / Next Navigation -->
+      <nav class="border-t border-gray-200 pt-8 grid grid-cols-2 gap-4" aria-label="Issue navigation">
+        {prev ? (
+          <a
+            href={`/issues/${prev.id}`}
+            class="group text-left"
+          >
+            <p class="text-xs text-muted uppercase tracking-widest mb-1">← Previous</p>
+            <p class="text-sm font-semibold text-forest group-hover:text-gold transition-colors duration-200 leading-snug">
+              {prev.data.title}
+            </p>
+          </a>
+        ) : <div />}
+        {next ? (
+          <a
+            href={`/issues/${next.id}`}
+            class="group text-right"
+          >
+            <p class="text-xs text-muted uppercase tracking-widest mb-1">Next →</p>
+            <p class="text-sm font-semibold text-forest group-hover:text-gold transition-colors duration-200 leading-snug">
+              {next.data.title}
+            </p>
+          </a>
+        ) : <div />}
+      </nav>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  const btn = document.getElementById('copy-link-btn');
+  const label = document.getElementById('copy-label');
+  btn?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      if (label) label.textContent = 'Copied!';
+      setTimeout(() => { if (label) label.textContent = 'Copy link'; }, 2000);
+    } catch {
+      // fallback: select URL bar
+    }
+  });
+</script>

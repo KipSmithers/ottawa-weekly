@@ -1,0 +1,1 @@
+import"./hoisted.DZLh4_Zy.js";const e=document.getElementById("copy-link-btn"),t=document.getElementById("copy-label");e?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(window.location.href),t&&(t.textContent="Copied!"),setTimeout(()=>{t&&(t.textContent="Copy link")},2e3)}catch{}});

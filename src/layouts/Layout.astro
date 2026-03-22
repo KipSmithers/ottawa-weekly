@@ -1,0 +1,64 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  noindex?: boolean;
+  publishDate?: string;
+  type?: 'website' | 'article';
+}
+
+const {
+  title,
+  description = 'Ottawa Weekly — Your guide to the best of the Capital, every Thursday.',
+  image = '/og-default.png',
+  noindex = false,
+  type = 'website',
+} = Astro.props;
+
+const siteTitle = 'Ottawa Weekly';
+const fullTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
+const siteUrl = 'https://ottawaweekly.ca';
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+const ogImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content={type} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content={siteTitle} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Source+Sans+3:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  </head>
+  <body class="bg-cream font-sans text-gray-900 antialiased">
+    <slot />
+  </body>
+</html>

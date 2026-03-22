@@ -1,0 +1,56 @@
+title: "Reading Week & Cozy Spots"
+publish_date: "2026-02-26"
+issue_number: 44
+summary: "Winterlude reaches its midpoint, a new Byward Market bakery is causing lineups, and the Ottawa Philharmonic closes out its February run."
+editor_note: "Reading week brings a slightly different energy to the city — a bit younger, a bit looser, with the universities emptied out and replaced by actual tourists. If you've been meaning to visit a museum or gallery without the usual weekday rush, this is your week."
+
+featured_event:
+  title: "Winterlude – Confederation Park Ice Sculptures"
+  date_time: "All week · 9:00 AM – 9:00 PM"
+  location: "Confederation Park & Dow's Lake Pavilion"
+  description: "Canada's iconic winter festival is in full swing. This week features the International Ice Carving Competition at Confederation Park — teams from 12 countries sculpting blocks of ice into extraordinary forms over two days, with the completed works on display through the weekend."
+  source_url: "https://canada.ca/en/canadian-heritage/campaigns/winterlude"
+
+highlights:
+  - title: "Ottawa Philharmonic – 'A Night at the Movies'"
+    date_time: "Friday & Saturday · 7:30 PM"
+    location: "Southam Hall, National Arts Centre"
+    description: "The OPO closes out their February run with a crowd-favourite program of cinematic greats — John Williams, Ennio Morricone, and Bernard Herrmann. Guest conductor Mei-Ann Chen returns after her triumphant November visit. Still tickets available."
+    source_url: "https://ottawaphil.ca"
+
+  - title: "Byward Market – New Bakery Opening"
+    date_time: "Opens Saturday, Feb 28 · 7:00 AM"
+    location: "Miel Bakery, 40 Byward Market Square"
+    description: "The most anticipated bakery opening in recent Ottawa memory. Miel (honey, in French) from Gatineau pastry chef Marie-Claude Tremblay does sourdoughs, laminated pastries, and a honey-lavender croissant that's been previewed at farmers' markets all winter. Go early. Lines are already forming."
+    source_url: "https://byward-marche.ca"
+
+  - title: "Ottawa International Animation Festival – Winter Shorts"
+    date_time: "Saturday & Sunday · 2:00 PM and 7:00 PM"
+    location: "ByTowne Cinema, 325 Rideau St"
+    description: "A special mid-season screening of OIAF award winners and this year's Canadian competition. Two programs, each about 90 minutes. An incredible showcase of what's happening in animation right now."
+    source_url: "https://bytowne.ca"
+
+  - title: "Sugar Bush Run – Gatineau Park"
+    date_time: "Sunday, March 1 · 9:00 AM"
+    location: "Gatineau Park Visitor Centre, Chelsea, QC"
+    description: "A family-friendly 5km and 10km trail run through the sugar maple forest of Gatineau Park. The 5km includes snowshoeing through the bush. Post-race pancakes with fresh syrup. Registration from $25."
+    source_url: "https://ncc-ccn.gc.ca/places/gatineau-park"
+
+family_corner:
+  - title: "Canada Aviation and Space Museum – Free Family Day"
+    date_time: "Saturday, Feb 28 · 9:00 AM – 5:00 PM"
+    location: "Canada Aviation and Space Museum, 11 Aviation Pkwy"
+    description: "Free admission all day during Reading Week. Explore 130 original aircraft, hands-on simulators, and the new astronaut training exhibit. Kids love the Lancaster bomber walkthrough."
+    source_url: "https://ingeniumcanada.org/aviation"
+
+  - title: "Winterlude – Snowflake Kingdom at Jacques-Cartier Park"
+    date_time: "All week · 9:00 AM – 5:00 PM"
+    location: "Jacques-Cartier Park, Gatineau"
+    description: "The Snowflake Kingdom — Winterlude's dedicated family zone — has giant snow slides, ice mazes, and activities for all ages. Free entry, skate rentals available nearby."
+    source_url: "https://canada.ca/en/canadian-heritage/campaigns/winterlude"
+
+  - title: "Reading Week Movie Marathon at the Mayfair"
+    date_time: "Tue–Fri · Matinee screenings from 1:00 PM"
+    location: "Mayfair Theatre, 1074 Bank St"
+    description: "Ottawa's beloved independent cinema runs a classic family film series all week — one classic each afternoon at $6/ticket. This week: Spirited Away, The Princess Bride, Paddington 2, and Matilda."
+    source_url: "https://mayfairtheatre.ca"

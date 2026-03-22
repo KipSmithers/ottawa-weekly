@@ -1,0 +1,56 @@
+title: "Winter's Last Dance"
+publish_date: "2026-03-05"
+issue_number: 45
+summary: "The Rideau Canal Skateway closes for the season, Winterlude's final weekend delivers, and a hidden Hintonburg gallery opens a stunning textile show."
+editor_note: "Every year I think I'm over winter and then the last skating weekend on the Canal happens and I'm not. There's something genuinely melancholy and beautiful about it — the ice rougher than it was in January, everyone out there knowing it's the last time. Go skate."
+
+featured_event:
+  title: "Last Weekend on the Rideau Canal Skateway"
+  date_time: "Saturday & Sunday · Until the ice closes"
+  location: "Rideau Canal Skateway – Full length, 7.8km"
+  description: "The world's largest naturally frozen skating rink is in its final days of the season. Skate the full 7.8km from Dow's Lake to the NAC, grab a Beavertail at one of the hut stops, and take it in — it won't be back until January. Free to skate, rentals available at major access points."
+  source_url: "https://ncc-ccn.gc.ca/places/rideau-canal-skateway"
+
+highlights:
+  - title: "Winterlude – Crystal Garden Ice Sculptures"
+    date_time: "Friday–Sunday · 9:00 AM – 9:00 PM (final weekend)"
+    location: "Confederation Park, Laurier Ave W"
+    description: "The renowned ice sculpture competition ends its run this weekend with 30 international teams' completed works on display. The Chinese team's five-metre dragon is drawing serious crowds. Free, dress warm."
+    source_url: "https://canada.ca/en/canadian-heritage/campaigns/winterlude"
+
+  - title: "Duo Concertante at Carleton Dominion-Chalmers Centre"
+    date_time: "Saturday, March 7 · 7:30 PM"
+    location: "Dominion-Chalmers United Church, 355 Cooper St"
+    description: "Ottawa's beloved classical duo — violin and piano — perform a program of Schubert, Prokofiev, and a world premiere from a local composer. Intimate venue, extraordinary acoustics, tickets from $25."
+    source_url: "https://nac-cna.ca"
+
+  - title: "Textile & Thread Exhibition at Studio 22"
+    date_time: "Opens March 6, runs through April 30"
+    location: "Studio 22 Gallery, 22 Elgin St"
+    description: "A stunning new show from six Ottawa-area textile artists working in weaving, embroidery, and mixed media. The standout piece is a 12-metre woven installation that fills the gallery's main room. Free entry."
+    source_url: "https://studio22gallery.ca"
+
+  - title: "Sens vs Leafs – Home Game"
+    date_time: "Saturday, March 7 · 7:00 PM"
+    location: "Canadian Tire Centre, 1000 Palladium Dr, Kanata"
+    description: "The Ottawa–Toronto rivalry brings the city's hockey energy to its peak. There's electricity in the Tire Centre on nights like this. Tickets still available in the upper bowl."
+    source_url: "https://ottawasenators.com"
+
+family_corner:
+  - title: "Winterlude – Snow Slides at Jacques-Cartier Park"
+    date_time: "All weekend · 10:00 AM – 5:00 PM"
+    location: "Jacques-Cartier Park, Gatineau (5 min from Parliament)"
+    description: "Giant snow slides, ice mazes, and the world of ice sculptures — all free for families. Cross the Portage Bridge and spend a morning exploring the Gatineau side of Winterlude."
+    source_url: "https://canada.ca/en/canadian-heritage/campaigns/winterlude"
+
+  - title: "Rideau Centre Family Skate"
+    date_time: "Sunday, March 8 · 1:00 PM – 3:30 PM"
+    location: "Marion Dewar Plaza (outdoors, beside Rideau Centre)"
+    description: "Free outdoor skating on the downtown rink with music and hot chocolate from the nearby stands. Rentals available on-site. The last organized family skate of the season."
+    source_url: "https://ottawa.ca/en/recreation-and-parks"
+
+  - title: "Ottawa Public Library – Bilingual Winter Story Time"
+    date_time: "Saturday, March 7 · 10:00 AM"
+    location: "Beaverbrook Branch, 2500 Campeau Dr, Kanata"
+    description: "A bilingual (English/French) winter-themed story time for ages 2–6, with songs, puppets, and a simple craft to take home. Free, drop-in welcome."
+    source_url: "https://biblioottawalibrary.ca"

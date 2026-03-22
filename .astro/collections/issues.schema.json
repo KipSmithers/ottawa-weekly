@@ -1,0 +1,80 @@
+{
+  "$ref": "#/definitions/issues",
+  "definitions": {
+    "issues": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "publish_date": {
+          "type": "string"
+        },
+        "issue_number": {
+          "type": "number"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "editor_note": {
+          "type": "string"
+        },
+        "featured_event": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "date_time": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "source_url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "date_time",
+            "location",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "highlights": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/issues/properties/featured_event"
+          }
+        },
+        "family_corner": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/issues/properties/featured_event"
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "publish_date",
+        "summary",
+        "featured_event",
+        "highlights",
+        "family_corner"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

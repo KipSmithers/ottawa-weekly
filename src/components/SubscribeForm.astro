@@ -1,0 +1,61 @@
+---
+export interface Props {
+  variant?: 'hero' | 'inline' | 'footer';
+  headline?: string;
+  subtext?: string;
+}
+
+const {
+  variant = 'inline',
+  headline,
+  subtext,
+} = Astro.props;
+
+const BEEHIIV_EMBED_URL = 'https://subscribe-forms.beehiiv.com/d49423f8-8962-479d-8faf-1cf369f3ceb3';
+---
+
+<div
+  class:list={[
+    'subscribe-form-wrapper',
+    variant === 'hero' && 'w-full',
+    variant === 'inline' && 'bg-sage-bg border border-sage/20 rounded-card p-6',
+    variant === 'footer' && 'w-full',
+  ]}
+>
+  {headline && (
+    <p
+      class:list={[
+        'font-display font-semibold mb-2',
+        variant === 'hero' && 'text-cream text-2xl md:text-3xl',
+        variant === 'inline' && 'text-forest text-lg',
+        variant === 'footer' && 'text-cream text-xl',
+      ]}
+    >
+      {headline}
+    </p>
+  )}
+  {subtext && (
+    <p
+      class:list={[
+        'text-sm mb-4',
+        variant === 'hero' && 'text-cream/70',
+        variant === 'inline' && 'text-muted',
+        variant === 'footer' && 'text-cream/60',
+      ]}
+    >
+      {subtext}
+    </p>
+  )}
+
+  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <iframe src="https://subscribe-forms.beehiiv.com/d49423f8-8962-479d-8faf-1cf369f3ceb3" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 704px; height: 339px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"></iframe>
+
+  <p
+    class:list={[
+      'text-xs mt-2',
+      variant === 'hero' ? 'text-cream/40' : 'text-muted/60',
+    ]}
+  >
+    Free, every Thursday. Unsubscribe anytime.
+  </p>
+</div>
