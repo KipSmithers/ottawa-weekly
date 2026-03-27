@@ -1,0 +1,68 @@
+title: "Playoffs, Mulaney & The Last Weekend of Sugar Season"
+publish_date: "2026-03-27"
+issue_number: 49
+summary: "Playoff hockey opens at TD Place, John Mulaney brings his new tour to Ottawa, a landmark Indigenous world premiere runs at the NAC, and the Vanier Sugar Festival closes out its 41st year."
+editor_note: "Spring is officially here — and Ottawa is going all-out to celebrate. This week brings playoff hockey, Broadway's best touring musical, a landmark Indigenous world premiere, maple syrup and baby animals, a legendary comedian, and a classical concert to make your soul sing. Oh, and Good Friday is this week, which means Easter on the Farm kicks off Thursday. Pace yourself — there's a lot of city to love. 🍁"
+
+featured_event:
+  title: "John Mulaney: Mister Whatever"
+  date_time: "Wednesday, April 1 · 7:30 PM"
+  location: "The Arena at TD Place, 1015 Bank St"
+  description: "He's one of the most beloved comedians of his generation — and he's bringing his brand-new Mister Whatever tour to Ottawa for one night only. Sharp, confessional, and laugh-out-loud relentless, John Mulaney delivers the kind of storytelling that stays with you long after the lights come up. Doors at 6:30 PM. All ages."
+  source_url: "https://www.ticketmaster.ca"
+
+highlights:
+  - title: "& Juliet — Final Weekend at the NAC"
+    date_time: "Through Sunday, March 29 · Various showtimes"
+    location: "NAC Southam Hall, 1 Elgin St"
+    description: "Broadway's most infectious touring musical wraps up its Ottawa run this weekend. If Juliet got a second chance — and a killer pop soundtrack — what would she do next? Created by the Emmy-winning writer of Schitt's Creek. Your very last chance to catch it."
+    source_url: "https://nac-cna.ca"
+
+  - title: "Rose — World Premiere by Tomson Highway"
+    date_time: "Through Saturday, April 4 · Various showtimes"
+    location: "NAC Babs Asper Theatre, 1 Elgin St"
+    description: "A world premiere musical from Tomson Highway, the award-winning Indigenous playwright behind The Rez Sisters. Rose is the deeply moving, fiercely funny third chapter of his acclaimed 'rez' cycle. NAC Indigenous Theatre at its most powerful."
+    source_url: "https://nac-cna.ca"
+
+  - title: "NAC Sicard Artist Series"
+    date_time: "Friday, March 27 · 8:00 PM"
+    location: "NAC Fourth Stage, 1 Elgin St"
+    description: "The intimate Fourth Stage is the perfect place to discover the next voice in Canada's Francophone music scene. NAC's curated showcase of bold, boundary-crossing talent — expect something fresh and unforgettable."
+    source_url: "https://nac-cna.ca"
+
+  - title: "Walk Like a Man — A Celebration of Frankie Valli & The Four Seasons"
+    date_time: "Sunday, March 29"
+    location: "Meridian Theatres @ Centrepointe, 101 Centrepointe Dr"
+    description: "The harmonies, the falsetto, the hits — Can't Take My Eyes Off You, Big Girls Don't Cry, Sherry — all recreated live with full theatrical staging. If you love Frankie Valli (or just loved Jersey Boys), your Sunday afternoon is sorted. From $69."
+    source_url: "https://www.meridiancentrepointe.com"
+
+  - title: "Minta & the Brook Trout + Sarah Greene + Paul Kolinski"
+    date_time: "Friday, March 27 · Doors 8:00 PM"
+    location: "Avant Garde Bar, Ottawa"
+    description: "Three local acts, one great night. Minta & the Brook Trout headline a packed evening of Ottawa indie-folk warmth at one of the city's best intimate venues. This is the kind of local bill Ottawa does better than anyone."
+    source_url: "https://www.avantgardebar.ca"
+
+  - title: "41st Annual Vanier Sugar Festival — Final Weekend"
+    date_time: "Through Sunday, March 29 · Open daily"
+    location: "Muséoparc Vanier, 300 Pères-Blancs Ave"
+    description: "One of Ottawa's most beloved spring traditions is in its final days. Maple syrup tastings, live music, local artisans, traditional sugar shack foods, and a whole lot of community warmth. Free for all — don't miss it."
+    source_url: "https://museoparc.ca/en/programming/sugar-festival/"
+
+family_corner:
+  - title: "Easter on the Farm — Canada Agriculture & Food Museum"
+    date_time: "Starting Good Friday, April 3"
+    location: "900 Promenade de la Pinède (Prince of Wales Dr)"
+    description: "Baby animals, free chocolates, crafts, and guided barn tours — Easter on the Farm is an Ottawa rite of spring. Spots sell out every year, so book your timed entry now!"
+    source_url: "https://ingeniumcanada.org/agriculture"
+
+  - title: "Ottawa Farmers' Market — Winter Market"
+    date_time: "Sunday, March 29 · 10:00 AM – 3:00 PM"
+    location: "Aberdeen Pavilion, Lansdowne Park"
+    description: "Ottawa's beloved year-round market at the Aberdeen Pavilion with 85+ local, producer-only vendors. Fresh baked goods, local cheeses, meats, and specialty foods. A wonderful Sunday morning ritual before the 67's game!"
+    source_url: "https://ottawafarmersmarket.ca"
+
+  - title: "Canadian Museum of History — Easter Weekend"
+    date_time: "Good Friday, April 3 through Easter weekend"
+    location: "100 Laurier St, Gatineau, QC"
+    description: "Make the Museum part of your Easter plans! Family-style Easter brunch in the stunning River View Salon with views of Ottawa's skyline, plus world-class exhibits for all ages."
+    source_url: "https://www.historymuseum.ca"
