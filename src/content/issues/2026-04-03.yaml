@@ -1,0 +1,68 @@
+title: "Easter Weekend, Anime Ottawa & Goo Goo Dolls"
+publish_date: "2026-04-03"
+issue_number: 50
+summary: "Anime Ottawa takes over the EY Centre, the Goo Goo Dolls play the Tire Centre, Dirty Dancing comes alive at the NAC with a live orchestra, and Easter weekend is overflowing with family adventures across the capital."
+editor_note: "Happy Easter, Ottawa! Spring has officially arrived in the Capital — and the city is celebrating in style. This week is packed to the brim: anime fans are descending on the EY Centre, legendary blues rockers are lighting up Hard Rock LIVE, the NAC is delivering cinematic magic, and families have no shortage of egg hunts, maple season adventures, and outdoor fun. Whether you're heading to a farm, a concert hall, or a candlelit church, the Capital has something glorious in store. 🌷"
+
+featured_event:
+  title: "Anime Ottawa 2026"
+  date_time: "April 3–5"
+  location: "EY Centre, 4899 Uplands Drive"
+  description: "The third edition of Anime Ottawa transforms the EY Centre into Canada's ultimate Japanese and Asian pop-culture playground. Expect spectacular cosplay competitions, a sprawling artist showcase and exhibition hall, gaming tournaments, creator meet-and-greets, and panels diving deep into the world of anime, manga, and beyond. Whether you're a decade-long fan or completely cosplay-curious, this is the kind of electric, joyful, community-first event that makes Ottawa shine. Grab your badge early — it sells out fast!"
+  source_url: "https://www.animeottawa.ca"
+
+highlights:
+  - title: "Dirty Dancing in Concert — NAC"
+    date_time: "Saturday, April 4 · 8:00 PM"
+    location: "Southam Hall, National Arts Centre, 1 Elgin St"
+    description: "The beloved 1987 film comes roaring back to life as Dirty Dancing screens on the Southam Hall big screen while a live orchestra performs every iconic note — from '(I've Had) The Time of My Life' to 'Do You Love Me.' One night only. Bring someone you love."
+    source_url: "https://nac-cna.ca"
+
+  - title: "Goo Goo Dolls: Canada Spring 2026 Tour"
+    date_time: "Monday, April 6"
+    location: "Canadian Tire Centre, 1000 Palladium Drive"
+    description: "From 'Iris' to 'Slide' and everything in between — the Goo Goo Dolls bring a lifetime of anthems to the Canadian Tire Centre. Pure, emotional, sing-every-word rock 'n' roll. A night that belongs to the generations who grew up on these songs."
+    source_url: "https://www.canadiantirecentre.com"
+
+  - title: "Ottawa Comic Arts Festival (OCAF)"
+    date_time: "Saturday, April 4"
+    location: "Glebe Community Centre, 175 Third Ave"
+    description: "Ottawa's beloved celebration of visual storytelling returns! Browse hundreds of creators, catch panels on comic-making and illustration, discover your next favourite graphic novel, and connect with the vibrant local comics community. Free admission."
+    source_url: "https://ottawacomicarts.com"
+
+  - title: "George Thorogood & The Destroyers"
+    date_time: "Saturday, April 4"
+    location: "Hard Rock LIVE Ottawa, 4837 Albion Road"
+    description: "The gritty guitar legend behind 'Bad to the Bone' and 'Who Do You Love' brings six decades of blues-rock firepower to Hard Rock LIVE. Thorogood and his Destroyers are a force of nature on stage — raw, relentless, and utterly electric."
+    source_url: "https://www.hardrockcafeottawa.com"
+
+  - title: "Candlelight: Tribute to Taylor Swift"
+    date_time: "Saturday, April 4 · 7:00 PM"
+    location: "Knox Presbyterian Church, Ottawa"
+    description: "Hundreds of flickering candles, soaring string quartets, and every Taylor Swift era reimagined as sweeping classical arrangements inside one of Ottawa's most stunning historic churches. The Eras experience — but make it orchestral. A genuinely magical evening. From $63."
+    source_url: "https://feverup.com"
+
+  - title: "NAC Orchestra: Violin Showcase"
+    date_time: "April 8–9"
+    location: "Southam Hall, National Arts Centre, 1 Elgin St"
+    description: "The NAC Orchestra returns for a dazzling two-night showcase featuring world-class violin performance. One of Ottawa's most beloved cultural institutions in full spring-season form — the perfect midweek escape."
+    source_url: "https://nac-cna.ca"
+
+family_corner:
+  - title: "Easter at The Log Farm"
+    date_time: "April 3–6 (Easter Long Weekend)"
+    location: "670 Cedarview Road, Ottawa"
+    description: "Egg hunts in the forest, scenic wagon rides, bunnies, farm animals, and all the spring energy of a real working farm. One of the Capital's most beloved Easter traditions — includes egg hunt and wagon ride with admission. Book early!"
+    source_url: "https://thelogfarm.ca"
+
+  - title: "Easter at the Bunker — Diefenbunker"
+    date_time: "Saturday, April 4"
+    location: "3929 Carp Road, Ottawa"
+    description: "Only in Ottawa: an Easter scavenger hunt four storeys underground inside Canada's Cold War bunker! Hunt for camouflaged eggs, decorate at the craft station, and find little treats along the way. Wildly unique and genuinely fun for all ages."
+    source_url: "https://diefenbunker.ca"
+
+  - title: "Easter at the Canada Agriculture & Food Museum"
+    date_time: "April 3–6"
+    location: "901 Prince of Wales Drive, Ottawa"
+    description: "Beautifully decorated eggs in the All About Eggs room, a springtime craft to take home, and a family movie. A lovely, gentle Easter outing that blends fun with learning. Included with museum admission."
+    source_url: "https://ingeniumcanada.org/agriculture"
